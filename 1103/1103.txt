@@ -1,0 +1,2 @@
+bmiclient.html - bmiscript.js - bmiserver.jsp
+register.jsp - requestdemo1.jsp
