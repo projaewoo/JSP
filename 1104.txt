@@ -1,0 +1,28 @@
+1104수업 흐름!
+
+search.html - serarch.jsp - redirect.js
+applicationdemo1.jsp - application.js - style.css
+
+방문자 수를 이미지로 찍기
+applicationdemo2.jsp - count.txt.  
+
+Log 기록 남기기
+applicationdemo3.jsp
+
+페이지 info 찍기
+pagedemo.jsp
+
+
+configdemo.jsp - web.xml
+
+Application 변수 연습. 
+register.html - applicationset.jsp - applicationget.jsp
+
+Session변수 연습
+register.html - sessionset.jsp - session.jsp
+
+pageContext변수 연습
+register.html - pageset.jsp - pageget.jsp
+
+Request 변수 연습
+register.html - requestset.jsp - requestget.jsp
