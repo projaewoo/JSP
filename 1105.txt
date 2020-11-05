@@ -1,0 +1,27 @@
+=======================
+오류 처리
+errordemo.jsp - error.jsp
+web.xml - errordemo.jsp - 404.html - 500.html
+web.xml - errordemo.jsp - numberformat.html - arithmetic.html
+
+include
+date.jsp - includedirectivedemo.jsp - includeactiontagdemo.jsp
+includedirectivedemo1.jsp - color.jspf (jsp의 fragment (조각)) - header.jsp - copyright.jsp
+
+forward
+나이에 따라 다른 페이지를 forward 방식으로 보여주기
+register.html - teenage.jsp - adult.jsp - silver.jsp - forwarddemo.jsp
+
+기타 태그
+hello.jsp
+
+bean 연습
+beandemo.jsp
+
+useBean연습
+Java Resources/com.example.libs/Member.java - beandemo.jsp
+Java Resources/com.example.libs/LoginBean.java
+Java Resources/com.example.libs/LoginBean.java - beandemo1.jsp - beandemo2.jsp
+
+param 연습
+colorbean.html -  ColorBean.java - colorbean.jsp - colorbean1.jsp
