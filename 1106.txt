@@ -1,0 +1,74 @@
+<%@ %>
+페이지마다 세팅
+
+include directive
+웹 페이지 컴포넌트화
+여러 웹 페이지 가져올 때
+하나의 자바 파일로 만들어서 한 번 컴파일
+정적 페이지에 유리
+
+include 액션
+각자 컴파일 따로, 버퍼에서 모아서 같이 감
+동적 페이지에 유리
+
+sriptlet
+<%   %>
+자바 문법 적용
+
+declaration
+<%! %>
+멤버변수. 멤버메소드 등 선언
+9개의 내장객체 사용 x
+	_jspServier()밖에서 만들어져서
+
+expression
+<%=  %>
+출력 담당
+
+주석
+<%--  --%>
+html 1차 주석, Java 2차 주석을 커버하는 3차 주석 (JSP 주석)
+servlet Java로 변환도 안되는 3차 주석
+
+9개의 객체
+request, response, out, session, config, pageContext ...
+원형도 알아야함 (javax.servlet...)  (API 알아야해서)
+각각의 역할 알아야함
+
+내장객체
+_jspServiet()안에서만 돌아가는 지역변수
+declaraion에서 사용 불가
+
+exception : 일반 JSP에서 사용 불가
+
+pageContext : 현재 페이지에서만 정보 저장
+
+action태그
+6개
+include, param, useBean, getProperty, setProperty
+<jsp:  />
+include : 동적 페이지 포함
+
+Java Beans
+자바 빈을 다루는 기술
+자바 빈 = 백엔드에서 돌아가는 자바 웹 클래스
+
+getProperty
+	name 같으면 * 사용 가능
+setProperty
+	name 같으면 * 사용 가능
+
+================================
+Cookie 활용
+cookiedemo.jsp -> cookiedemo1.jsp
+cookieset.jsp - cookieget.jsp - cookiemodify.jsp - cookiedelete.jsp
+(순서 : cookiget.jsp -> cookieset.jsp  -> cookieget.jsp -> cookiemodify.jsp -> cookieget.jsp)
+
+Cookie, Bean 활용해서 로그인, 로그아웃 구현
+LoginBean.java - login.html - login.jsp - welcome.jsp
+
+session 활용
+web.xml - LoginBean.java - sessionget.jsp - sessionset.jsp - sessionmodify.jsp - sessiondelete.jsp
+
+session 활용해서 로그인, 로그아웃 구현
+LoginBean.java - login.html - login1.jsp - welcome1.jsp - logout.jsp
