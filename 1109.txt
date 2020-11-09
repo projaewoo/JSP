@@ -1,0 +1,96 @@
+directive
+
+<% page %>
+page encoding
+import
+errorPage
+bufferSize
+
+include 지시자
+
+include directive
+<%@ file
+jspf (jsp의 조각파일)을 사용할 때
+
+<%! %>
+	멤버변수, 멤버 메소드
+<%= %>
+<% %>
+scripelet
+자바 코드
+
+Model1 : scriptlet, declaration 등등 사용
+
+Comment 주석
+HTML , JAVA 아우르는 3차 주석 <%-- --%>
+servlet java로 만들어지지도 않는 주석
+
+9개 내장객체
+1. _jspService() 안에서만 실행하는 로컬 변수
+2. exception 객체 : isErrorPage = true인 곳에서만 사용 가능
+
+request
+포워딩할 때, 정보 남아있음
+
+session
+한 유저가 같은 브라우저로 여러 페이지 다녀도 정보 유지
+ex) 유저가 홈피 방문한 횟수
+
+application
+모든 사용자가 어떤 브라우저 사용해도 공유 변수로 사용 가능
+ex) count
+
+
+원형, client -> server : request
+
+pageContext
+내장객체 뽑아냄
+
+web.xml의 context-param : application의 getIntit
+Init-param : config의 getInit
+
+에러처리
+에러페이지면 exception객체 사용
+web.xml에서 에러코드 명시
+exception type 태그 사용
+
+액션태그
+<jsp: ... />
+
+forward
+장점 : 파라미터 전달 가능
+단점 : 상대경로만 사용 가능 (자신의 도메인 밖으로 못 넘어감)
+redirect
+장점 : 절대경로 사용, 다른 페이지로 이동 가능
+단점 : 파라미터 전달 X
+
+include 액션
+따로 컴파일해서 버퍼에 모여서 이동
+
+JavaBeans
+캡슐화, 패키지화
+
+bean
+기본 생성자 호출
+
+session (interface)
+	상태 정보를 서버에 저장
+cookie
+	상태정보를 유저 브라우저에 저장
+request.getCookies / response.addCookie
+expire
+무조건 string만 저장
+세션ID 저장하는 용도로 사용
+
+==========================
+쇼핑카트 (추가, 삭제)
+menu.html - cart.jsp -remove.jsp
+
+localStorage
+localstoragedemo.html
+
+localStorage 활용한 쇼핑몰
+localstoragedemo1.html
+
+DB 연동
+jdbcdemo.jsp
