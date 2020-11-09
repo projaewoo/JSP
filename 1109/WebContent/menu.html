@@ -1,0 +1,14 @@
+<!-- include되는 menu.html의 위치가 html, body 사이이므로 여기서는 body태그 안적어도 됨-->
+
+<h1>구매할 CD를 선택해주세요.</h1>
+<form>
+    <select name="item">
+        <option value="">-- 선택 --</option>
+        <option value="테스형">테스형</option>
+        <option value="나훈아">나훈아</option>
+        <option value="태진아">태진아</option>
+    </select><br />
+    <input type="hidden" name="step" value = "add">        <!-- 담으려고 하는 CD-->
+    <input type="submit" value="선택하기">
+
+</form>
