@@ -1,0 +1,15 @@
+cookie 전송
+inputCookie.html - makeCookie.jsp - displayCookie.jsp
+
+session 전송
+register.html - agreement.jsp - subscribe.jsp - result.jsp
+
+LocalStorage 전송
+inputLocalStorage.html (드롭박스 참조) - displayLocalStorage.html - 
+
+DB연동
+oracle.properties - DBConnection - DBClose - jdbcdemo1.jsp 
+
+성적관리 프로젝트
+web.xml -> index.html -> DBClose, DBConnection -> StudentVO.java - SungjukmgmtDao.java
+- SelectService.java - list.jsp
