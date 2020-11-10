@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src = "js/jquery-3.5.1.js"></script>
+<script>
+	$(document).ready(function(){	//jQuery의 ready된 후, function 호출.
+		var strObj = localStorage.getItem("mycart");		//string
+		var obj = JSON.parse(strObj);		//객체로 변환.
+		var str = "";
+		for(var i = 0 ; i < obj.items.length; i++) {
+			var item = obj.items[i];			//꺼내면 name, value 있음
+			str += item.name + " : " + item.value + "<br/>";
+			
+		}
+		//document.getElementById('result').innerHTML = str;를 아래에서 jQuery로 코딩.
+		$('#result').html(str);		//result가 id이므로 #result		//글씨면 text(), 태그가 들어있으면 html().																								
+	});			
+</script>
+</head>
+<body>
+&nbsp;&nbsp;&nbsp;&nbsp; localStorage 이름 : 값<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;==========<br/>
+	<div id = "result"></div>
+	<a href ="inputLocalStorage.html">LocalStorage 입력 화면으로 이동</a>
+</body>
+</html>
