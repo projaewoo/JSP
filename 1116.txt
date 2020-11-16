@@ -1,0 +1,31 @@
+eldemo.jsp
+
+Header사용
+register.html (실행) -> eldemo1.jsp  - js폴더 (jQuery 사용 위해) - css폴더 (bootStrap 사용 위해)
+
+header, headerValues
+eldemo2.jsp
+
+cookie
+eldemo3.jsp -> cookieget.jsp
+
+oracle.properties - web.xml - eldemo4.jsp
+
+pageContext
+eldemo5.jsp
+
+연산자
+eldemo6.jsp
+
+collection과 array의 EL
+eldemo7.jsp
+
+beans(웹에서 java class를 부르는 명칭)와 EL의 관계
+UserInfo.java - eldemo8.jsp
+
+EL의 클래스 정적 메소드 사용
+eldemo9.jsp -> el-function.tls ->  ElDemo.java
+
+예제
+가짜 톰캣 server.xml - 해당 프로젝트 web.xml - 해당 프로젝트 DBConnection
+ employee.html -> - employee.jsp -> el-function.tld - > GetEmployee.java
