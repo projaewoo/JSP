@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Welcome To 1116</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!--  application의 getInitParam -->
+  <!--  이 사이트를 방문하는 모든 사람들에게 공유하는 값 -->
+  <context-param>
+  	<description>Oracle 18g Expression Edition 설정 정보</description>
+  	<param-name>oracle.properties</param-name>
+  	<param-value>/WEB-INF/oracle.properties</param-value>
+  </context-param>
+  
+  
+  <!--  config의 getInitParam -->
+  <!-- <servlet>
+  	<jsp-file></jsp-file>
+  	<init-param>
+  		<description></description>
+  		<param-name></param-name>
+  		<param-value></param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping></servlet-mapping> -->
+  
+  <!--  해당 프로젝트의 모든 파일이 EL 사용 못하게 하려면 -->
+  <!-- <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>*.jsp</url-pattern>		 모든 .jsp파일에 대해서
+  		<el-ignored>true</el-ignored>		 EL을 사용 못하게 함
+  	</jsp-property-group>
+  </jsp-config> -->
+  
+  
+  <!--  JNDI 사용 -->
+	<resource-ref>
+		<description>JNDI Test</description>
+		<res-ref-name>jdbc/myoracle</res-ref-name>		<!--  myoracle로 호출 -->
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>			<!--  인증은 Container가 진행. -->
+	</resource-ref>
+  
+  
+</web-app>

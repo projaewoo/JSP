@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    		version="2.0">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>mytag</short-name>		<!--  커스텀 태그 ( <aaa:bbb/> 에서 bbb. -->
+    <function>
+    	<name>mymethod</name>				<!--  eldemo:mymethod의 mymethod -->	<!-- mymethod :  jsp가 호출하는 메소드 -->
+    	<function-class>com.example.libs.ElDemo</function-class>		<!--  호출할 class -->
+    	<function-signature>java.lang.String getFormat(java.util.Date)</function-signature>	<!-- com.example.libs.ElDemo 안의 호출할 메소드 -->	<!--  signature : 컴파일러가 메소드 구별하는 기준 (메소드 이름, 파라미터, 리턴타입)-->
+    </function>
+    
+    <function>
+    	<name>empinfo</name>				
+    	<function-class>com.example.libs.GetEmployee</function-class>		<!--  호출할 class -->
+    	<function-signature>java.lang.String getEmp(java.lang.String)</function-signature>	<!-- com.example.libs.GetEmployee 안의 호출할 메소드 -->	<!--  signature : 컴파일러가 메소드 구별하는 기준 (메소드 이름, 파라미터, 리턴타입)-->
+    </function>
+    
+    
+</taglib>
