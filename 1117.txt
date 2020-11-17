@@ -1,0 +1,20 @@
+JSTL의 core
+coredemo.jsp
+
+out출력
+outdemo.jsp
+
+set
+setdemo.jsp
+
+방문자 수
+setdemo1.jsp - CountBean.java
+
+remove
+remove.jsp
+
+catch (exception 처리)
+catchdemo.jsp
+
+if
+ifdemo.jsp
