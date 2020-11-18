@@ -1,0 +1,8 @@
+Membership프로젝트
+
+membership.exerd - membership.sql - scott에서 StoredProcedure 작성
+index.html => index.jsp => register.html - register.jsp 
+MemberVO.java 
+MemberDao.java -> InsertService.java -> register.jsp
+login.jsp, login_ok.jsp
+SelectService.java
